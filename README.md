@@ -8,10 +8,7 @@ This is the frontend of the **Invoice Management System**, built using Next.js. 
     - Create, edit, and delete invoices.
     - Filter invoices by status.
     - Search invoices by vendor name or invoice number.
-
-- **Responsive Design**
-    - Fully optimized for all screen sizes.
-
+    
 - **User Feedback**
     - Real-time notifications for success and error messages using Notistack.
 
