@@ -29,6 +29,10 @@ This is the frontend of the **Invoice Management System**, built using Next.js. 
 - **JavaScript (ES6)** - Core programming language.
 
 
+## Deployed Site
+- The application is deployed on Netlify and can be accessed at:
+ [Live Demo on Netlify](https://invoice-management-app-main.netlify.app/)
+
 ## Installation
 
 Follow the steps below to run the frontend locally:
