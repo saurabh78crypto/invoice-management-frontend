@@ -1,4 +1,5 @@
 import NotificationsIcon from '@mui/icons-material/Notifications';  
+import Image from 'next/image';
 
 const Navbar = () => {
   return (
