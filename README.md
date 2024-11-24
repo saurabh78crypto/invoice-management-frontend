@@ -5,18 +5,18 @@ This is the frontend of the **Invoice Management System**, built using Next.js. 
 ## Features
 
 - **Invoice Management**
- - Create, edit, and delete invoices.
- - Filter invoices by status.
- - Search invoices by vendor name or invoice number.
+    - Create, edit, and delete invoices.
+    - Filter invoices by status.
+    - Search invoices by vendor name or invoice number.
 
 - **Responsive Design**
- - Fully optimized for all screen sizes.
+    - Fully optimized for all screen sizes.
 
 - **User Feedback**
- - Real-time notifications for success and error messages using Notistack.
+    - Real-time notifications for success and error messages using Notistack.
 
 - **Pagination**
- - Navigate through paginated invoices seamlessly.
+    - Navigate through paginated invoices seamlessly.
 
 
 ## Technologies Used
@@ -41,29 +41,29 @@ Follow the steps below to run the frontend locally:
 ### Steps
 
 1. **Clone the repository:**
-``bash
-git clone
-cd
-``
+```bash
+git clone https://github.com/saurabh78crypto/invoice-management-frontend.git
+cd invoice-management-frontend
+```
 
 2. **Install dependencies:**
-``bash
+```bash
 npm install
 # OR
 yarn install
-``
+```
 
 3. **Create an `.env` file and add the following environment variables:**
-``js
+```js
 NEXT_PUBLIC_API_BASE_URL=<Your API Base URL>
-``
+```
 
 4. **Start the development server:**
-``bash
+```bash
 npm run dev
 # OR
 yarn dev
-``
+```
 
 5. Open your browser and navigate to `http://localhost:3000`.
 
