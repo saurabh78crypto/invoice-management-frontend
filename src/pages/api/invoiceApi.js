@@ -1,4 +1,4 @@
-import axiosInstance from '../utils/axiosInstance';
+import axiosInstance from '../../utils/axiosInstance';
 
 export const getInvoices = async ({status, searchQuery, page = 1, limit = 5}) => {
   try {

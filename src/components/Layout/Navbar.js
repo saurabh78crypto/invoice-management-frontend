@@ -13,7 +13,7 @@ const Navbar = () => {
         </div>
 
         <div className="flex items-center space-x-2">
-          <img
+          <Image
             src="/assets/img/profile.png"
             alt="Profile"
             className="w-10 h-10 rounded-full"

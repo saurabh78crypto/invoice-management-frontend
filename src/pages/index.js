@@ -6,7 +6,7 @@ import SearchBarWithActions from '../components/Invoice/SearchBarWithActions';
 import InvoiceTable from '../components/Invoice/InvoiceTable';
 import { getInvoices, updateInvoice } from './api/invoiceApi';
 import Pagination from '@/components/Layout/Pagination';
-import { debounce } from './utils/debounce';
+import { debounce } from '../utils/debounce';
 
 export default function Home() {
   const { enqueueSnackbar } = useSnackbar();
