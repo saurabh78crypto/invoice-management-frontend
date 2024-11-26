@@ -24,14 +24,14 @@ const FilterBar = ({ selectedStatus, onFilter }) => {
           onClick={() => handleFilterClick(status)}
           className={`relative px-4 pb-1 text-sm mr-4 ${
             selectedStatus === status 
-              ? 'text-[#4C6F94] font-bold border-b-2 border-[#F9C200]' 
+              ? 'text-[#4C6F94] font-bold border-b-2 border-[#2e5a75]' 
               : 'text-gray-700 hover:text-[#4C6F94]' 
           }`}
         >
           {status}
           {selectedStatus === status && (
             <div
-              className="absolute bottom-0 left-0 right-0 h-[2px] bg-[#F9C200]"
+              className="absolute bottom-0 left-0 right-0 h-[2px] bg-[#2e5a75]"
               style={{ transform: 'translateY(2px)' }} 
             />
           )}

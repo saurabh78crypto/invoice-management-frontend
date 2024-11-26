@@ -62,6 +62,19 @@ const InvoiceTable = ({ invoices, selectedInvoice, onEditSelect, onDeselect }) =
     return Number(amount).toLocaleString();
   };
 
+  const getStatusStyles = (status) => {
+    switch (status) {
+      case 'Awaiting Approval':
+        return 'border border-[#998dfe] bg-[#f5f4fe] text-[#998dfe] rounded-md px-4 py-1 text-xs font-medium'; // Blue border, light blue background, blue text
+      case 'Open':
+        return 'border border-[#9cb9d8] bg-[#eef8ff] text-[#9cb9d8] rounded-md px-4 py-1 text-xs font-medium'; // Green border, light green background, green text
+      case 'Paid':
+        return 'border border-[#8ccc8c] bg-[#f5faf4] text-[#8ccc8c] rounded-md px-4 py-1 text-xs font-medium'; // Grey border, light grey background, dark grey text
+      default:
+        return 'border border-[#EB5757] bg-[#FFE9E9] text-[#EB5757] rounded-md px-4 py-1 text-xs font-medium'; // Fallback styling for unknown statuses
+    }
+  };
+
   return (
     <div className="p-4 bg-white shadow">
         <table className="w-full border-collapse text-sm">
@@ -100,7 +113,9 @@ const InvoiceTable = ({ invoices, selectedInvoice, onEditSelect, onDeselect }) =
                 </td>
                 <td className="border-b p-3 text-[#333333]">{invoice.vendorName || '-'}</td>
                 <td className="border-b p-3 text-[#333333]">{invoice.invoiceNumber || '-'}</td>
-                <td className="border-b p-3 text-[#333333]">{invoice.status || '-'}</td>
+                <td className="border-b p-3 text-[#333333]">
+                  <span className={getStatusStyles(invoice.status)}>{invoice.status || '-'}</span>
+                </td>
                 <td className="border-b p-3 text-[#333333]">{formatAmount(invoice.netAmount) || '-'}</td>
                 <td className="border-b p-3 text-[#333333]">{formatDate(invoice.invoiceDate) || '-'}</td>
                 <td className="border-b p-3 text-[#333333]">{formatDate(invoice.dueDate) || '-'}</td>
